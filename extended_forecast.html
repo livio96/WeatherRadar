@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>weather app</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+	<!-- bootstap css -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="background-color: azure;">
+<nav class="navbar navbar-default" id="nav_bar">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navLinks" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand app-name" href="index.html"><img src="img/logo2.jpg" class="img-responsive" id="logo" alt=""><strong>WeatherRadar</strong></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+   
+  </div><!-- /.container-fluid -->
+</nav>
+    <div style="color: green; font-size: 30px;  background-image: url(img/background_current.jpg)" class="jumbotron jumbo">
+	<h2>WELCOME</h2>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+      <div class="form-group">
+        <label for="city-name"><strong>City Name:</strong></label>
+        <input style="width: 600px; border: solid 1px green; position: absolute; " type="text" class="form-control" id="cityname" placeholder="Eg: Montclair">
+      </div>
+
+      <div class="form-group">
+        <label for="number-of-days"><strong>Number of days:</strong></label>
+        <input style="width: 600px; border: solid 1px green;  " type="text" class="form-control" id="days" placeholder="max:16">
+      </div>
+
+      <div class="form-group">
+        <button  id="submitCity" class="button" onclick="getForecast(document.getElementById('cityname').value,document.getElementById('days').value);">Get Extended Forecast</button>
+      </div>         
+            
+      <div class="table-responsive">
+        <table class="table table-bordered  table-condensed">
+          <thead>
+            <tr>
+                <th style="color: green;"><strong>Date</strong></td>
+                <th style="color: green;"><strong>Icon</strong></td>
+                <th style="color: green;"><strong>Weather</strong></td>
+                <th style="color: green;"><strong>Description</strong></td>
+                <th style="color: green;"><strong>Min</strong></td>
+                <th style="color: green;"><strong>Max</strong></td>
+                <th style="color: green;"><strong>Pressure</strong></td>
+                <th style="color: green;"><strong>Humidity</strong></td>
+                <th style="color: green;"><strong>Wind Speed</strong></td>
+            </tr>
+          </thead> 
+          <tbody id="forecast">
+            
+          </tbody> 
+        </table>  
+      </div>
+	  </div>
+  </div>
+</div>
+
+<!--Jquery-->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+<!--bootstarp javascript-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

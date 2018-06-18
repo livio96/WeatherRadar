@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Raleway');
+
+body{
+	font-family: 'Raleway',serif;
+	background-color: white;
+	margin: 0;
+	padding: 0;
+}
+
+#nav_bar{
+	margin-bottom: 0;
+	padding: 0;
+	background-color:#fff;
+	border: none;
+	z-index: 10000;
+	/*position: absolute;*/
+}
+
+.app-name{
+	color: #d50000 !important;
+	font-size: 2.1em;
+	font-weight: bolder;
+	transition: all 0.3s;
+}
+.app-name:hover{
+	color: black!important;
+}
+#nav_list li a{
+	color: white;
+	font-weight: bolder;
+	transition: all 0.3s;
+	font-size: 2.1em; 
+}
+
+#nav_list li a:hover{
+	color:black;
+}
+
+#logo{
+	max-height: 42px;
+	margin-right: 8px;
+	display: inline-block;
+	margin-top: -15px;
+}
+
+#headRow{
+	background-image: url(img/background.jpg);
+	background-size: cover;
+	top: 0; bottom: 0;
+    position: absolute;
+    width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	margin: 0;
+}
+
+#tagline{
+	color: black;
+	padding-top: 4%;
+	font-size: 2.3em;
+}
+#tagline-2{
+	color: black;
+	padding-top: 2%;
+	padding-bottom: 5%;
+	font-family: 'Indie Flower',cursive;
+	font-size: 2em;
+}
+
+ul#list_inline{
+	color: black;
+	font-size: 1.8em;
+	text-align: center;
+
+}
+
+.jumbo h2{
+	font-size: 2.2em;
+	font-weight: lighter;
+	text-align: center;
+}
+
+#city{
+	width: 60%;
+	margin: auto;
+	text-align: center;
+}
+.jumbo{
+	margin-bottom: 0px;
+	background-color: azure;
+	color: white;
+    border: 1px solid black ; 
+}
+input[type='text'],#submitCity{
+	height: 1.8em;
+	font-size: 1.6em;
+	margin-bottom: 8%;
+    border-radius: 15px; 
+    
+}
+
+label{
+	font-size: 1.6em;
+	margin-top: 2%;
+}
+table{
+	font-size: 1.6em;
+    border: solid 1px black ; 
+}
+
+#weather-data{
+	min-width:200px;
+	background-color: green;
+	color: #fff;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 1.6em;
+
+}
+
+#weather-data h3{
+	padding-top: 3%;
+}
+#weather-data p:last-child{
+	padding-bottom: 3%;
+}
+
+
+  
+  @-webkit-keyframes blinker {
+  from {opacity: 1.0;}
+  to {opacity: 0.0;}
+}
+.blink{
+	color: black;
+	font-weight: lighter;
+	text-decoration: blink;
+	-webkit-animation-name: blinker;
+	-webkit-animation-duration: 0.6s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:ease-in-out;
+	-webkit-animation-direction: alternate;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 7px;
+  background-color: green;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 25px;
+  font-size: 25px;
+  padding: 10px;
+  width: 350px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
